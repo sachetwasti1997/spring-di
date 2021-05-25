@@ -17,9 +17,9 @@ public class SfgDiApplication {
 
 		MyController controller = (MyController) applicationContext.getBean("myController");
 
-		String greetings = controller.sayHello();
+		System.out.println("--------Primary Bean");
 
-		System.out.println(greetings);
+		System.out.println(controller.sayHello());
 		/**
 		 * Here SPRING is creating the instance of the controller in Spring Context
 		 * This is how inversion of control works, spring is managing the construction of myController.
